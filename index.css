@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #2827cc;
+}
+.logo {
+  padding-top: 20px;
+  margin-left: 50px;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item {
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+}
+.list {
+  color: #1b98f5;
+}
+.nav-item-active {
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  justify-items: center;
+  border: none;
+  font-weight: bold;
+  background-color: #1b98f5;
+  margin-right: 20px;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.left {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+.left h1 {
+  font-size: 80px;
+}
+.left p {
+  font-size: 28px;
+  margin-top: 20px;
+}
+.right {
+  width: 60%;
+}
+.image {
+  height: 80%;
+}
+.second {
+  display: flex;
+  justify-content: space-between;
+}
+.second-left {
+  width: 60%;
+}
+.image2 {
+  height: 80%;
+}
+.second-right h1 {
+  font-size: 40px;
+  margin-right: 250px;
+  margin-top: 50px;
+}
+.second-right h4 {
+  margin-top: 40px;
+  font-size: 30px;
+}
+.second-right p {
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.fa-arrow-right1 {
+  color: orange;
+  width: 20px;
+  height: 20px;
+  font-size: 50px;
+}
+.fa-arrow-right2 {
+  color: green;
+}
+.fa-arrow-right3 {
+  color: blue;
+}
+.third {
+  text-align: center;
+  font-size: 40px;
+}
+.cards {
+  margin-left: 90px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 20%;
+  height: 250px;
+  background-color: #fff;
+  margin-right: 30px;
+  box-shadow: 0px 5px 15px #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.card-active {
+  color: #000;
+  margin-left: 30px;
+  font-size: 40px;
+  box-shadow: 0px 5px 15px #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+.Code {
+  background-color: #8d3daf;
+}
+.card-body {
+  color: #000;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.card-head {
+  color: #000;
+  margin-left: 30px;
+  font-size: 40px;
+  margin-top: 20px;
+}
+.fourth {
+  background-color: #758283;
+  padding: 100px;
+}
