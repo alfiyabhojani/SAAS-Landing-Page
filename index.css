@@ -13,12 +13,32 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.nav-item {
+.header-section {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__section {
+  display: flex;
+}
+.nav__section li {
   margin-top: 20px;
   font-size: 25px;
   color: white;
   font-weight: 300;
   cursor: pointer;
+  list-style: none;
+  padding: 0 40px;
+}
+.nav__section li a {
+  color: white;
+  text-decoration: none;
+}
+.nav__section li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 12px;
+  padding: 8px;
+  transition: 0.3s ease-in;
 }
 .list {
   color: #1b98f5;
@@ -37,6 +57,49 @@ header {
   background-color: #1b98f5;
   margin-right: 20px;
 }
+.toggle {
+  display: none;
+  font-size: 30px;
+  color: white;
+  margin-top: 17px;
+}
+@media only screen and (max-width: 480px) {
+  .logo {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .logo-toggle {
+    display: flex;
+    justify-content: space-between;
+  }
+  .toggle {
+    display: block;
+    padding: 0 20px;
+  }
+  .active {
+    display: flex;
+  }
+  .nav-item-active {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .nav__section {
+    display: block;
+  }
+  .nav__section li {
+    padding: 0 0;
+    font-size: 18px;
+  }
+  .toggle:hover .nav__section {
+    display: block;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+/* first */
 .first {
   display: flex;
   justify-content: space-between;
@@ -59,6 +122,22 @@ header {
 .image {
   height: 80%;
 }
+@media only screen and (max-width: 480px) {
+  .first {
+    display: block;
+  }
+  .left {
+    margin: 20px 30px;
+  }
+  .left h1 {
+    font-size: 40px;
+  }
+  .left p {
+    font-size: 20px;
+  }
+}
+
+/* second */
 .second {
   display: flex;
   justify-content: space-between;
@@ -95,6 +174,34 @@ header {
 .fa-arrow-right3 {
   color: blue;
 }
+@media only screen and (max-width: 480px) {
+  .second {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .second-right h1 {
+    margin-top: auto;
+    font-size: 25px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .second-right p {
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .second-right h4 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .second-left {
+    width: 100%;
+  }
+}
+
+/* third */
 .third {
   text-align: center;
   font-size: 40px;
@@ -104,6 +211,7 @@ header {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 10px;
 }
 .card {
   width: 20%;
@@ -130,18 +238,57 @@ header {
 }
 .Code {
   background-color: #8d3daf;
+  margin-top: 0;
 }
 .card-body {
   color: #000;
   font-size: 25px;
-  margin-left: 30px;
-  margin-top: 20px;
+  /* margin-left: 30px; */
+  margin-top: 0px;
 }
 .card-head {
   color: #000;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   font-size: 40px;
   margin-top: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .third h1 {
+    font-size: 22px;
+  }
+  .cards {
+    display: block;
+    margin-left: 0;
+  }
+  .card {
+    width: 70%;
+    height: auto;
+    padding: 0;
+    margin: 20px 50px;
+    margin-right: 0;
+  }
+  .card-logo {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+  .card-head {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .card-body {
+    font-size: 18px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    margin-left: 0;
+  }
+  .card-active {
+    width: 70%;
+    height: auto;
+    padding: 0;
+    margin: 20px 50px;
+    margin-right: 0;
+  }
 }
 .fourth {
   background-color: #758283;

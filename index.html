@@ -17,13 +17,22 @@
     <!-- header -->
     <header>
       <div class="items">
-        <img src="./photo/white-logo.png" alt="" srcset="" class="logo" />
-
-        <h5 class="nav-item list">Home</h5>
-        <h5 class="nav-item">Services</h5>
-        <h5 class="nav-item">Pricing</h5>
-        <h5 class="nav-item">Testimonials</h5>
-        <h5 class="nav-item">Blog</h5>
+        <div class="logo-toggle">
+          <img src="./photo/white-logo.png" alt="" srcset="" class="logo" />
+          <div class="toggle" id="toggle">
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          </div>
+        </div>
+        <div class="header-section" id="head__section">
+          <!-- Navigation items Starts -->
+          <section class="nav__section">
+            <li><a href="#" class="list"> Home</a></li>
+            <li><a href="#"> Services</a></li>
+            <li><a href="#"> Pricing</a></li>
+            <li><a href="#"> Testimonials</a></li>
+            <li><a href="#"> Blog</a></li>
+          </section>
+        </div>
         <div class="active">
           <button class="nav-item-active">FREE TRAIL</button>
         </div>
@@ -124,4 +133,15 @@
 
     <div class="fourth"></div>
   </body>
+
+  <script>
+    const toggle = document.getElementById("toggle");
+    toggle.addEventListener("click", () => {
+      const setDisplayValue =
+        document.getElementById("head__section").style.display === "block"
+          ? "none"
+          : "block";
+      document.getElementById("head__section").style.display = setDisplayValue;
+    });
+  </script>
 </html>
